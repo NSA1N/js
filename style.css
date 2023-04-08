@@ -31,8 +31,12 @@ padding: 20px 0;
     text-decoration: none;
     font-weight: 500;
     font-size: 12px;
+    margin-right: 16px;
 }
+.nav-item:last-child {
+    margin-right: 0px;
 
+  }
 .container {
     display: flex;
     max-width: 940px;
@@ -58,6 +62,7 @@ padding: 20px 0;
     font-size: 58px;
     line-height: 68px;
     color: #363940;
+    margin-bottom: 106px;
 }
 
 .About-me {
@@ -65,6 +70,7 @@ padding: 20px 0;
     font-size: 16px;
     line-height: 22px;
     color: #95A1BB;
+    margin-bottom: 213px;
 }
 
 .Scroll {
@@ -82,6 +88,7 @@ padding: 20px 0;
     line-height: 43px;
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 40px;
 }
 
 .Accordion {
@@ -102,10 +109,7 @@ padding: 20px 0;
     font-size: 16px;
     line-height: 22px;
     padding: 20px 19px;
-}
-
-.faq-input {
-appearance: none;
+    color: #363940;
 }
 
 .faq-title {
@@ -139,13 +143,14 @@ appearance: none;
 .Contact-info {
     flex-direction: column;
     text-align: center;
-    margin-bottom: 20px; 
+    margin-bottom: 40px; 
 }
 .Contact {
     display: block;
     font-weight: 500;
     font-size: 36px;
     line-height: 43px;
+    margin-bottom: 20px; 
 }
 
 .info {
@@ -184,7 +189,8 @@ appearance: none;
     width: 460px;
     height: 122px;
     resize: none;
-    margin-top: 20px
+    margin-top: 20px;
+    max-width: 460px
 }
 
 .btn {
@@ -204,6 +210,7 @@ footer {
     font-size: 14px;
     line-height: 22px;
     color: #95A1BB;
+    margin-top: 121px;
 }
 
 @media (max-width: 920px) {
@@ -212,8 +219,6 @@ footer {
         flex-direction: column;
     }
     .img-right {
-        display: flex;
-        order: 5;
         margin-top:20px;
         width: 100%;
         margin-right: 0;
@@ -229,20 +234,26 @@ footer {
     }
 
     .Logo {
-        display: flex;
         width: 36px;
-        height:36px;
-        justify-content: start;
-        margin-left: 20px;
+        height:auto;
+
     }
 
     .text-block {
         display: flex;
         flex-direction: column;
-        height: 509px;
+        height: auto;
         justify-content: space-between;
         padding-top: 20px;
         align-items: left;
+    }
+
+    .text-block > .Personal {
+        margin-bottom: 15px;
+    }
+
+    .text-block > .About-me {
+        margin-bottom: 30px;
     }
 
      .container {
@@ -252,6 +263,14 @@ footer {
         padding: 16px;
         
     }
+
+   .input {
+    max-width: 100%;
+   } 
+
+   .input:first-child {
+    margin-bottom: 20px;
+   }
 
     .Skills-item {
         border-radius: 4px;
@@ -274,16 +293,8 @@ footer {
         
     }
 
-    .btn {
+    .btn, .txt, .input {
         width: 100%
-    }
-
-    .txt {
-        width: 100%;
-    }
-
-    .input {
-        width: 100%;
     }
 
     .burger {
