@@ -8,23 +8,36 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
         <title>Верстка</title>
+
+
     </head>
 
     <!--Для ДЗ по GIT-->
     <body> 
-        <header class="container header">
-            <img class="Logo" src="Logo.png" alt="Logo">
-        <nav>
+        <header  class="container header">
+            <img class="Logo" src="Media/Logo.png" alt="Logo">           
+        <nav>         
             <a class="nav-item" href="#About_anchor">ABOUT</a>
             <a class="nav-item" href="#Skills_anchor">SKILLS</a>
             <a class="nav-item" href="*">SOCIAL</a>
             <a class="nav-item" href="#Contact_anchor">CONTACT US</a>
-            <a class="nav-item" href="*">BLOG</a>
-        </nav>
-        <img class="burger" src="Burger.png" alt="burger">
+            <a class="nav-item" href="*">BLOG</a>           
+        </nav>          
+            <img  class="burger" src="Media/Burger.png" alt="burger">   
         </header>
 
+        
+        
+
         <main>
+            <div class="menu-burger-content">
+                <a class="nav-item" href="#About_anchor">ABOUT</a>
+                <a class="nav-item" href="#Skills_anchor">SKILLS</a>
+                <a class="nav-item" href="*">SOCIAL</a>
+                <a class="nav-item" href="#Contact_anchor">CONTACT US</a>
+                <a class="nav-item" href="*">BLOG</a>   
+            </div>
+            
             <!--Первый блок-->
             <div id="About_anchor" class="container container-about" >
                 <div class="text-block">
@@ -34,7 +47,7 @@
                 </div>
     
                 <div class="img-right">
-                    <img src="Я.png" alt="random-picture">
+                    <img src="Media/Я.png" alt="random-picture">
                 </div>
             </div>
 
@@ -43,32 +56,53 @@
                 <h1 class="Skills">Skills</h1>
 
                 <div id="Skills_anchor" class="Skills-item">
-                    <div class="faq-title">Html</div>
-                    <div class="faq-text">
-                        <p>Здесь пока ничего</p>
-                    </div>
+                    <div class="faq-title">Html</div>     
+                        <p class="drop-content">Здесь пока ничего</p>                  
                 </div>
                 
                 <div class="Skills-item">
-                    <div class="faq-title">CSS</div>
-                    <div class="faq-text">
-                        <p>Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts have the same feel to them, like “Hey, I think I’ve been here before,” but I can’t figure out how I wound up in the same place. The situation is different, but the conflict feels the same. I first read this poem in “The Tibetan Book of Living and Dying” by Sogyal Rinpoche. When I “Googled” it, I found fourteen pages of links. It’s clearly a favorite with many people; I know it speaks volumes to me. “Autobiography in Five Chapters”</p>
-                    </div>
+                    <div class="faq-title">CSS</div>                   
+                        <p class="drop-content">Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts have the same feel to them, like “Hey, I think I’ve been here before,” but I can’t figure out how I wound up in the same place. The situation is different, but the conflict feels the same. I first read this poem in “The Tibetan Book of Living and Dying” by Sogyal Rinpoche. When I “Googled” it, I found fourteen pages of links. It’s clearly a favorite with many people; I know it speaks volumes to me. “Autobiography in Five Chapters”</p>                   
                 </div> 
 
                 <div class="Skills-item">
-                    <div class="faq-title">JavScript</div>
-                    <div class="faq-text">
-                        <p>Здесь пока ничего</p>
-                    </div>
+                    <div class="faq-title">JavScript</div>                 
+                        <p class="drop-content">Здесь пока ничего</p>                
                 </div>
 
                 <div class="Skills-item">
-                    <div class="faq-title">Vue</div>
-                    <div class="faq-text">
-                        <p>Здесь пока ничего</p>
-                    </div>
+                    <div class="faq-title">Vue</div>                
+                        <p class="drop-content">Здесь пока ничего</p>                 
                 </div>
+            </div>
+
+            <!--Слайдер-->
+            <div class="slide-container ">
+                <div class="slider-txt">
+                    <h1>My social networks</h1>
+                    <p1>There are many reasons to get down and start to get depressed about your situation.</p1>
+                </div>
+                
+                <div class="slide-content swiper">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="ovelay"></span>
+
+                                <div class="card-image container">
+                                         <img src="Media/вк.png" alt="" class="card-img">  
+                                         <img src="Media/Одноклассники.png" alt="" class="card-img">
+                                         <img src="Media/тг.png" alt="" class="card-img">
+                                         <img src="Media/вк.png" alt="" class="card-img">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div> 
+                    </div>                                     
+                </div>              
             </div>
 
             <!--Третий блок-->
@@ -94,4 +128,7 @@
         </footer>
         
     </body>
+
+    <!--JavaScript-->
+    <script src="Script.js"></script>
 </html>

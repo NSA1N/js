@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+/*html {
+    scroll-behavior: smooth;
+}
+*/
 body {
     font-family: 'Rubik', sans-serif;
 }
@@ -23,8 +27,30 @@ top: 0;
 background-color: white;
 justify-content: space-between;
 padding: 20px 0;
-
+z-index: 1;
 }
+
+
+.menu-burger-content{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+    background: white;
+    width: 100%;
+    height: 89.9vh;
+    position: fixed;
+    top: 80px;
+    z-index: 3;
+    margin: -17px 0 0 0;
+}
+.menu-burger-content a {
+    font-size: 30px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
 
 .nav-item {
     color: #6E38F7;
@@ -51,10 +77,12 @@ padding: 20px 0;
     width: 550px;
     height: 723px;
     margin-right: -21% ;
+    
 }
 
 .img-right > img {
     width: 100%;
+    
 }
 
 .Personal {
@@ -103,7 +131,17 @@ padding: 20px 0;
     margin-bottom: 20px;
 }
 
-.faq-text {
+.drop-content {
+    max-height: 0;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+   margin: 20px 19px;
+    color: #363940;
+}
+
+/*.faq-text {
     display: none;
     font-weight: 400;
     font-size: 16px;
@@ -111,6 +149,7 @@ padding: 20px 0;
     padding: 20px 19px;
     color: #363940;
 }
+*/
 
 .faq-title {
     font-weight: 500;
@@ -139,6 +178,34 @@ padding: 20px 0;
     transform: translateY(-50%);
     color: #6E38F7;
 }
+
+    /*Слайдер*/
+.slider-txt {
+    text-align: center;
+    
+}
+
+.card-image {
+    height: 80px;
+    width: 140px;
+    position: relative;
+    margin-top: 40px;
+    padding-bottom: 120px;
+    border-radius: 4px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+    margin: 20px;
+    
+}
+
+
+    /*Слайдер*/
+
 
 .Contact-info {
     flex-direction: column;
@@ -212,6 +279,8 @@ footer {
     color: #95A1BB;
     margin-top: 121px;
 }
+
+
 
 @media (max-width: 920px) {
     .container {
@@ -299,6 +368,7 @@ footer {
 
     .burger {
         display: block;
+        cursor:pointer;       
     }
 }
     
